@@ -1,8 +1,29 @@
 package com.company;
 
-public class Main {
+import javax.swing.*;
+import java.awt.*;
 
+public class Main extends JFrame {
+    private static final long serialVersionUID = 1l;
+    private MatrixR rack = new MatrixR();
+    private JButton jb = new JButton("Multiply");
+    private JPanel jp = new View(rack);
+    public Main() {
+        super("Matrix Test");
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        add(rack, BorderLayout.NORTH);
+        add(jp, BorderLayout.CENTER);
+        add(jb, BorderLayout.SOUTH);
+        jb.addActionListener(rack);
+        pack();
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        getRootPane().setDefaultButton(jb);
+    }
     public static void main(String[] args) {
-	// write your code here
+        EventQueue.invokeLater(
+                () -> new Main()
+        );
     }
 }
