@@ -7,12 +7,10 @@ public class Main extends JFrame {
     private static final long serialVersionUID = 1l;
     private MatrixR rack = new MatrixR();
     private JButton jb = new JButton("Multiply");
-    private JPanel jp = new View(rack);
     public Main() {
         super("Matrix Test");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        add(rack, BorderLayout.NORTH);
-        add(jp, BorderLayout.CENTER);
+        add(rack, BorderLayout.CENTER);
         add(jb, BorderLayout.SOUTH);
         jb.addActionListener(rack);
         pack();

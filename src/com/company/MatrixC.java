@@ -26,7 +26,7 @@ public class MatrixC extends JPanel {
     private static final long serialVersionUID = 1l;
     MatrixR rack;
     JTextField[][] jtfaa = {
-            {new JTextField(new DDoc(), "1.0", 4), new JTextField(new DDoc(), "0.0", 4), new JTextField(new DDoc(), "0.0", 4)},
+            {new JTextField(new DDoc(), "1.0", 4), new JTextField(new DDoc(), "0.0", 4), new JTextField(new DDoc(), "1.0", 4)},
             {new JTextField(new DDoc(), "0.0", 4), new JTextField(new DDoc(), "1.0", 4), new JTextField(new DDoc(), "0.0", 4)},
             {new JTextField(new DDoc(), "0.0", 4), new JTextField(new DDoc(), "0.0", 4), new JTextField(new DDoc(), "1.0", 4)}
     };
